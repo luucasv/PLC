@@ -16,4 +16,4 @@ instance Show Complex where
 
 instance Eq Complex where
     (==) (Complex a b) (Complex c d) = (a == c) && (b == d)
-
+    (/=) (Complex a b) (Complex c d) = not (a == b)
